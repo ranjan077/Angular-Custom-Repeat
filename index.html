@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>Custom repeat directive</title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myController">
+		<ul>
+			<li custom-repeat='name in names'>{{name}}</li>
+		</ul>
+		<input type="button" value="Change" ng-click="change()"/>
+	</div>
+</body>
+</html>
